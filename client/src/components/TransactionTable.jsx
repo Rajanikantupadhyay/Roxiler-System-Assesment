@@ -27,9 +27,9 @@ const TransactionTable = ({ selectedMonth, setSelectedMonth }) => {
     };
 
     return (
-        <div className='card p-5 rounded bg-secondary'>
+        <div className='card bg-secondary'>
             <div className='card-body '>
-                
+            <h2 className='card-title text-white'>Transactions</h2>
                 <div className='d-flex mb-3'>
                     <input 
                         type='text'
@@ -88,11 +88,11 @@ const TransactionTable = ({ selectedMonth, setSelectedMonth }) => {
                     </tbody>
                 </table>
                 <div className='d-flex justify-content-between'>
-                    <button className='btn btn-primary' onClick={() => setPage((prev) => Math.max(prev - 1, 1))}>
+                    <button className='btn btn-white bg-white' onClick={() => setPage((prev) => Math.max(prev - 1, 1))}>
                         Previous
                     </button>
                     <span>Page No: {page}</span>
-                    <button className='btn btn-primary' onClick={() => setPage((prev) => prev + 1)}>
+                    <button className='btn btn-white bg-white' onClick={() => setPage((prev) => prev + 1)}>
                         Next
                     </button>
                 </div>
